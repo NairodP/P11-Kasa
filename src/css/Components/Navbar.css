@@ -1,0 +1,53 @@
+.nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-color);
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem 4rem 3rem;
+}
+
+.nav a.logo img {
+  width: 200px;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav ul {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.nav ul li {
+  font-size: 2rem;
+}
+
+.nav ul li a.active {
+  text-decoration: underline;
+}
+
+/* Styles spécifiques aux écrans d'une largeur maximale de 375 pixels */
+@media (max-width: 375px) {
+  .nav {
+  height: 70px;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    padding-bottom: 0;
+  }
+  .nav a.logo img {
+    width: 135px;
+  }
+  .nav ul {
+    display: flex;
+    gap: 0.7rem;
+  }
+  .nav ul li {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+}

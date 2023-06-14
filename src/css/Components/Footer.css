@@ -1,0 +1,47 @@
+.footer {
+  background-color: #000000;
+  height: 210px;
+}
+
+.footer .footer-logo {
+  margin: 50px 0;
+  width: 150px;
+}
+
+.footer .copyright-logo {
+  width: 15px;
+}
+
+.footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer span {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  color: #ffffff;
+}
+
+/* Styles spécifiques aux écrans d'une largeur maximale de 375 pixels */
+@media (max-width: 375px) {
+  .footer {
+    height: 170px;
+  }
+
+  .footer .footer-logo {
+    margin: 40px 0 30px;
+    width: 130px;
+  }
+
+  .footer .copyright-logo {
+    width: 10px;
+  }
+
+  .footer span {
+    font-size: 0.8rem;
+    margin-left: 10px;
+    color: #ffffff;
+  }
+}

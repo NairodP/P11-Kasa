@@ -1,0 +1,18 @@
+.bannerContainerAbout {
+  position: relative;
+  height: 230px;
+  border-radius: 25px;
+  overflow: hidden;
+  background-image: url("/src/assets/img/about.png");
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(70%);
+}
+
+/* Styles spécifiques aux écrans d'une largeur maximale de 375 pixels */
+@media (max-width: 375px) {
+  .bannerContainerAbout {
+    border-radius: 11px;
+  }
+}

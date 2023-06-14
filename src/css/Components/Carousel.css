@@ -1,0 +1,77 @@
+.carousel-container {
+  width: 100%;
+  height: 450px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  border-radius: 1.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-hidden {
+  display: none;
+}
+
+.chevron-button {
+  width: 3rem;
+  height: 3rem;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -1rem);
+  z-index: 1;
+  /* background: blue; */
+}
+
+.left-button {
+  left: 1rem;
+}
+
+.right-button {
+  right: 1rem;
+}
+
+.chevron {
+  height: 100%;
+  width: 100%;
+}
+
+/* Styles spécifiques aux écrans d'une largeur maximale de 375 pixels */
+@media (max-width: 375px) {
+  .carousel-container {
+    height: 330px;
+  }
+  .slide {
+    border-radius: 11px;
+  }
+  .chevron-button {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .left-button {
+    left: 0.6rem;
+  }
+
+  .right-button {
+    right: 0.6rem;
+  }
+}

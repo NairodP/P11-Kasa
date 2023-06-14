@@ -1,0 +1,18 @@
+.rating {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.star {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.25em;
+}
+
+/* Styles spécifiques aux écrans d'une largeur maximale de 375 pixels */
+@media (max-width: 375px) {
+  .rating {
+    font-size: 1.1rem;
+  }
+}

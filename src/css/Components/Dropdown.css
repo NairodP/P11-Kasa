@@ -1,0 +1,57 @@
+.Dropdown {
+  width: 90%;
+  margin: 2rem auto 0;
+}
+
+.Dropdown button {
+  color: white;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1rem;
+  font-family: var(--font);
+  padding: 0.7rem 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.Dropdown button span img {
+  width: 1rem;
+  vertical-align: middle;
+}
+
+.content {
+  color: var(--main-color);
+  background-color: var(--bg-box-color);
+  border-radius: 0 0 5px 5px;
+  padding: 1.5rem 1rem 1rem;
+  font-size: 1rem;
+  margin-top: -5px;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+/* Styles spécifiques aux écrans d'une largeur maximale de 375 pixels */
+@media (max-width: 375px) {
+  .Dropdown {
+    width: 100%;
+    margin: 2rem auto 0;
+  }
+  .Dropdown:last-child {
+    margin: 2rem auto 1.5rem;
+  }
+  .Dropdown button {
+    border-radius: 11px;
+    font-size: 0.9rem;
+  }
+  .content {
+    border-radius: 0 0 11px 11px;
+    font-size: 0.9rem;
+  }
+}

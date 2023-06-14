@@ -1,0 +1,15 @@
+.body {
+  padding: 4rem;
+  padding-top: 2rem;
+}
+
+/* voir css composant AboutBanner & composant Dropdown */
+
+/* Styles spécifiques aux écrans d'une largeur maximale de 375 pixels */
+@media (max-width: 375px) {
+  .body {
+    padding: 0.8rem;
+    padding-top: .5rem;
+    width: 100%;
+  }
+}
