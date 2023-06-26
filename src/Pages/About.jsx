@@ -10,11 +10,7 @@ export default function About() {
       <div className="body">
         <AboutBanner />
         {rules.map((rule) => (
-          <Dropdown
-            key={rule.id}
-            title={rule.title}
-            content={rule.content}
-          />
+          <Dropdown key={rule.id} title={rule.title} content={rule.content} />
         ))}
       </div>
       <Footer />

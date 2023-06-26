@@ -7,6 +7,8 @@ export default function Carousel({ data }) {
   // console.log(data.length);
 
   const [slide, setSlide] = useState(0);
+  // console.log(slide + 1);
+  // console.log(data.length);
 
   const nextSlide = () => {
     setSlide(slide === data.length - 1 ? 0 : slide + 1);
@@ -59,6 +61,8 @@ export default function Carousel({ data }) {
             );
           })}
           {/* La classe de <img> est déterminée en fonction de l'index de la slide actuelle "slide" par rapport à l'index de l'élément en cours de génération "index". Si les deux indices sont égaux (slide === index), la classe slide est appliquée, sinon la classe slide-hidden est appliquée ce qui permet d'avoir à l'écran uniquement la slide avec l'index actuel. */}
+          <span className="indexSlide">{slide+1}/{data.length}</span>
+          
           <button className="chevron-button right-button" onClick={nextSlide}>
             <img
               src="/src/assets/icons/chevronRightStrict.png"
